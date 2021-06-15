@@ -134,13 +134,13 @@ Nmap done: 1 IP address (1 host up) scanned in 138.35 seconds
 ```
 Como vemos tiene el puerto 21, 22 y 80 abierto, que es el http,  veremos en el navegador de que se trata y analizaremos la web .
 
-![](web.png)
+![](images/web.png)
 
 
 
 En la pagina `Security Snapshot` nos encontramos con archivos pcap que son paquetes de red, pero cada vez que le damos click el indice de la pagina cambia, lo cual me parece raro.
 
-![](web2.png)
+![](images/web2.png)
 
 Entonces utilizé la herramienta `wfuzz` que se encargará de buscar los diferentes archivos en el directorio data, para ver cuántos indices hay, pero primero generé un wordlists con los números del 1 al 1000 para hacer la fuerza bruta con el comando.
 ```bash
